@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+
+.description-inform {
+  max-width: 210px;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+
+.inform-img {
+  min-width: 67px;
+
+  .fa {
+    font-size: 5rem;
+  }
+}
+
+@media(min-width: $screen-sm-min) {
+
+  #features {
+    padding-bottom: 120px;
+  }
+}

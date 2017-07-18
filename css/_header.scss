@@ -1,0 +1,138 @@
+.navbar-default,
+.navbar-collapse,
+.navbar-toggle {
+  background-color: rgba(252, 219, 0, 0.8);
+  border-color: transparent;
+  border: none;
+
+  .navbar-toggle {
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.btn-sandwich {
+  background-color: transparent;
+  border: none;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  font-size: 2.8rem;
+  font-weight: bold;
+
+  img {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.navbar {
+  font-size: 2.2rem;
+  font-weight: bold;
+
+  >span {
+    display: block;
+  }
+}
+.navbar-default {
+
+  .navbar-nav {
+    text-align: center;
+
+    li {
+
+      a {
+        font-weight: bold;
+        font-size: 1.8rem;
+        display: block;
+        padding: 20px 0;
+        text-transform: uppercase;
+        color: map-get($colors, primary);
+
+        &:hover {
+          background-color: rgba(255, 231, 69, 0.8);
+          color: #fff;
+          transition: all 0.5s ease-out;
+        }
+      }
+    }
+  }
+}
+
+
+@media(min-width: $screen-sm-min) {
+
+  #top-menu,
+  .navbar-fixed-top {
+    position: static;
+    margin: 0;
+    background-color: map-get($colors, secondary);
+  }
+
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .navbar-header {
+      margin-top: 60px;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-default {
+
+    .navbar-nav {
+      margin-top: 75px;
+
+      li {
+
+        a {
+          padding: 0 20px;
+          font-size: 2.2rem;
+          text-transform: capitalize;
+
+          &:hover {
+            background-color: transparent;
+          }
+
+          &:focus {
+            background-color: transparent;
+          }
+        }
+
+         &:first-child a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: $screen-md-min) {
+
+ .navbar-default {
+
+    .navbar-nav {
+
+      li {
+
+        a {
+          padding: 0 36px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+$colors: (
+  primary: #010101,
+  secondary: #fcdb00,
+  darken-secondary: #dac537,
+  lighten-primary: #555555,
+  darken-primary: #313841,
+  footer-text: #898989
+);
+
+$min-width: 320px;
+$max-width: 1924px;
+$fa-font-path: '../node_modules/font-awesome-sass/assets/fonts/font-awesome/';
+
+$navbar-default-link-color: map-get($colors, primary);
+$navbar-default-link-hover-color: #fff;
+$font-size-base: 14px;
+$font-size-h1: floor(($font-size-base * 2.3));
+$font-size-h2: floor(($font-size-base * 2));
+$font-size-h3: floor(($font-size-base * 1.6));
+$link-color: #fff;
