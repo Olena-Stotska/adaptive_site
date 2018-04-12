@@ -9,7 +9,7 @@ $colors: (
 
 $min-width: 320px;
 $max-width: 1924px;
-$fa-font-path: './fonts/font-awesome/';
+$fa-font-path: '../fonts/font-awesome/';
 
 $navbar-default-link-color: map-get($colors, primary);
 $navbar-default-link-hover-color: #fff;
